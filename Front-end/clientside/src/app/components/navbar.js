@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex justify-between mx-10 mt-4">
+    <nav className="flex justify-between screen2:mx-auto mx-10 mt-4">
       {/* Hamburger Icon */}
       <div className="lg:hidden flex items-center">
         <button
@@ -42,7 +42,7 @@ const Navbar = () => {
       </ul>
 
       <div className="flex items-center gap-6">
-        <div className="flex items-center relative">
+        <div className="flex screen2:hidden items-center relative">
           <input
             type="text"
             placeholder="Search"
