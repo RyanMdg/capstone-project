@@ -66,13 +66,14 @@ const Navbar = () => {
           onClick={toggleMenu}
         >
           <img
-            className="w-[40%]  screen2:w-[65%] object-contain flex-none"
+            className="w-[40%] ms-[12rem]  screen2:w-[65%] object-contain flex-none"
             src="/brnd.png"
             alt=""
           />
+
           <div className=" absolute left-[45rem] text-[3rem]">&#x2715;</div>
         </button>
-        <ul className="flex flex-col screen2:text-[2rem]  gap-4 mx-10 pt-12">
+        <ul className="flex flex-col screen2:text-[3rem] p-2 uppercase gap-10 mx-10 pt-12">
           <a href="/">
             <li>Home</li>
           </a>
