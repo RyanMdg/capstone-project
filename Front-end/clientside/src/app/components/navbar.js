@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className="lg:hidden flex items-center">
         <button
           type="button"
-          className="text-gray-500 text-2xl focus:outline-none"
+          className="text-gray-500 screen2:text-[4rem] me-10 focus:outline-none"
           onClick={toggleMenu}
         >
           &#8801;
@@ -25,7 +25,7 @@ const Navbar = () => {
 
       <div className="flex flex-shrink-0 items-center">
         <img
-          className="w-[40%] screen2:w-[100%] object-contain flex-none"
+          className="w-[40%] screen2:w-[75%] object-contain flex-none"
           src="/brnd.png"
           alt=""
         />
@@ -67,7 +67,7 @@ const Navbar = () => {
         >
           &#x2715;
         </button>
-        <ul className="flex flex-col gap-4 items-center pt-12">
+        <ul className="flex flex-col h-screen gap-4 items-center pt-12">
           <a href="/">
             <li>Home</li>
           </a>
