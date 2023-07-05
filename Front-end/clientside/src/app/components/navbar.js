@@ -56,22 +56,30 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`fixed top-0 left-0 h-screen screen2:h-[100%] w-64 bg-gray-100 z-50 transform duration-300 ease-in-out ${
+        className={`fixed top-0 left-0 h-screen screen2:h-[100%] w-[100%] bg-gray-100 z-50 transform duration-300 ease-in-out ${
           isMenuOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
         <button
           type="button"
-          className="text-gray-500 text-2xl absolute top-4 right-4 focus:outline-none"
+          className="text-gray-500 screen2:text-[2rem] text-2xl flex items-center justify-center relative top-4 right-4 focus:outline-none"
           onClick={toggleMenu}
         >
-          &#x2715;
+          <img
+            className="w-[40%]  screen2:w-[65%] object-contain flex-none"
+            src="/brnd.png"
+            alt=""
+          />
+          <div className=" absolute left-[45rem] text-[3rem]">&#x2715;</div>
         </button>
-        <ul className="flex flex-col screen2:text-[2rem]  gap-4 items-center pt-12">
+        <ul className="flex flex-col screen2:text-[2rem]  gap-4 mx-10 pt-12">
           <a href="/">
             <li>Home</li>
           </a>
-          <li className="font-semibold">Men</li>
+          <a href="" className="flex justify-between ">
+            <li className="font-semibold">Men</li>
+            <strong>&#62;</strong>
+          </a>
           <li className="font-semibold">Women</li>
           <li>Products</li>
           <li>Accessories</li>
