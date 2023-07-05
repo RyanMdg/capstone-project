@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className="lg:hidden flex items-center">
         <button
           type="button"
-          className="text-gray-500 screen2:text-[4rem] me-10 focus:outline-none"
+          className="text-gray-500 screen2:text-[3rem] mx-10 focus:outline-none"
           onClick={toggleMenu}
         >
           &#8801;
@@ -25,7 +25,7 @@ const Navbar = () => {
 
       <div className="flex flex-shrink-0 items-center">
         <img
-          className="w-[40%] screen2:w-[75%] object-contain flex-none"
+          className="w-[40%] screen2:w-[65%] object-contain flex-none"
           src="/brnd.png"
           alt=""
         />
@@ -41,7 +41,7 @@ const Navbar = () => {
         <li>Accessories</li>
       </ul>
 
-      <div className="flex items-center gap-6">
+      <div className="flex items-center  gap-6">
         <div className="flex screen2:hidden items-center relative">
           <input
             type="text"
@@ -50,9 +50,9 @@ const Navbar = () => {
           />
           <AiOutlineSearch className="text-gray-500 absolute w-7 left-[11rem] text-[1.3rem]" />
         </div>
-        <VscAccount className="text-[1.3rem]" />
-        <AiOutlineHeart className="text-[1.3rem]" />
-        <BsBag className="text-[1.3rem]" />
+        <VscAccount className="text-[1.3rem] screen2:text-[2rem]" />
+        <AiOutlineHeart className="text-[1.3rem] screen2:text-[2rem]" />
+        <BsBag className="text-[1.3rem] screen2:me-10 screen2:text-[2rem]" />
       </div>
 
       <div
