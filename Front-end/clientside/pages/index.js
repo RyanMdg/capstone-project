@@ -1,7 +1,11 @@
+import "../src/app/globals.css";
+import Navbar from "../src/app/components/navbar";
+import Navbar2 from "../src/app/components/navbar2";
+
 const home = () => {
   return (
     <div>
-      <h1>this is home</h1>
+      <Navbar />
     </div>
   );
 };
