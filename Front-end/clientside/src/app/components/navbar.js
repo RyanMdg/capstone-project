@@ -25,7 +25,7 @@ const Navbar = () => {
 
       <div className="flex flex-shrink-0 items-center">
         <img
-          className="w-[40%] screen2:w-[50%] object-contain flex-none"
+          className="w-[40%] screen2:w-[70%] object-contain flex-none"
           src="/brnd.png"
           alt=""
         />
