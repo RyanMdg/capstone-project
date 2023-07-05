@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className="lg:hidden flex items-center">
         <button
           type="button"
-          className="text-gray-500 screen2:text-[3rem] mx-10 focus:outline-none"
+          className="text-gray-500 screen2:text-[4rem] mx-10 focus:outline-none"
           onClick={toggleMenu}
         >
           &#8801;
@@ -50,13 +50,13 @@ const Navbar = () => {
           />
           <AiOutlineSearch className="text-gray-500 absolute w-7 left-[11rem] text-[1.3rem]" />
         </div>
-        <VscAccount className="text-[1.3rem] screen2:text-[2rem]" />
-        <AiOutlineHeart className="text-[1.3rem] screen2:text-[2rem]" />
-        <BsBag className="text-[1.3rem] screen2:me-10 screen2:text-[2rem]" />
+        <VscAccount className="text-[1.3rem] screen2:text-[3rem]" />
+        <AiOutlineHeart className="text-[1.3rem] screen2:text-[3rem]" />
+        <BsBag className="text-[1.3rem] screen2:me-10 screen2:text-[3rem]" />
       </div>
 
       <div
-        className={`fixed top-0 left-0 h-screen w-64 bg-gray-100 z-50 transform duration-300 ease-in-out ${
+        className={`fixed top-0 left-0 h-screen screen2:h-[100%] w-64 bg-gray-100 z-50 transform duration-300 ease-in-out ${
           isMenuOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
@@ -67,7 +67,7 @@ const Navbar = () => {
         >
           &#x2715;
         </button>
-        <ul className="flex flex-col h-screen gap-4 items-center pt-12">
+        <ul className="flex flex-col screen2:text-[2rem]  gap-4 items-center pt-12">
           <a href="/">
             <li>Home</li>
           </a>
