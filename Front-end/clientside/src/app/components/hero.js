@@ -30,7 +30,7 @@ const Carousel = () => {
         className="w-full h-full   bg-center bg-cover duration-500"
       ></div>
       {/* Left Arrow */}
-      <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl hover:bg-[#0000008b] duration-300  p-2 bg-black/20 text-white cursor-pointer">
+      <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl  hover:bg-[#0000008b] duration-300  p-2 bg-black/20 text-white cursor-pointer">
         <BsChevronCompactLeft onClick={prevSlide} size={30} />
       </div>
       {/* Right Arrow */}
@@ -42,7 +42,7 @@ const Carousel = () => {
           <div
             key={slideIndex}
             onClick={() => goToSlide(slideIndex)}
-            className="text-2xl cursor-pointer"
+            className="text-2xl screen2:text-[3rem] cursor-pointer"
           >
             <RxDotFilled />
           </div>
