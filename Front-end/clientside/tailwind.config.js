@@ -13,8 +13,9 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       screens: {
-        screen1: { min: "900px", max: "1100px" },
-        screen2: { min: "320px", max: "500px" }, // Define a custom breakpoint at 900px
+        screen1: { min: "800px" },
+        screen2: { min: "320px", max: "500px" },
+        screen3: { min: "500px", max: "800px" }, // Define a custom breakpoint at 900px
       },
     },
   },
