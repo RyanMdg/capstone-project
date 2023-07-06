@@ -1,11 +1,12 @@
 import "../src/app/globals.css";
 import Navbar from "../src/app/components/navbar";
-import Navbar2 from "../src/app/components/navbar2";
+import Hero from "../src/app/components/hero";
 
 const home = () => {
   return (
     <div>
       <Navbar />
+      <Hero />
     </div>
   );
 };
