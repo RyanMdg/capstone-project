@@ -116,7 +116,7 @@ const Navbar = () => {
             alt=""
           />
 
-          <div className=" absolute left-[45rem] screen3:text-[2rem] text-[3rem]">
+          <div className=" absolute left-[45rem] screen2:left-[50rem] screen3:text-[2rem] text-[3rem]">
             &#x2715;
           </div>
         </button>
@@ -124,9 +124,9 @@ const Navbar = () => {
           <input
             type="text"
             placeholder="Search"
-            className="py-4 px-4 bg-[#e1dfdf7d] text-[1.2rem] focus:outline-none flex-grow"
+            className="py-4 px-4 screen2:py-7 screen2:text-[2rem] bg-[#e1dfdf7d] text-[1.2rem] focus:outline-none flex-grow"
           />
-          <AiOutlineSearch className="text-gray-500 absolute w-7 left-[33rem] text-[2rem]" />
+          <AiOutlineSearch className="text-gray-500 absolute screen2:left-[37rem] left-[33rem] screen2:text-[3rem] text-[2rem]" />
         </div>
       </div>
     </nav>
