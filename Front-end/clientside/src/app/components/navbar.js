@@ -111,7 +111,7 @@ const Navbar = () => {
           onClick={toggleSearch}
         >
           <img
-            className="w-[40%] ms-[12rem]  screen2:w-[65%] screen3:w-[45%] object-contain flex-none"
+            className="w-[40%] ms-[16rem]  screen2:w-[65%] screen3:w-[45%] object-contain flex-none"
             src="/brnd.png"
             alt=""
           />
