@@ -4,10 +4,10 @@ import { RxDotFilled } from "react-icons/rx";
 
 const Carousel = () => {
   const slides = [
-    { image: "/fubu.png", buttonLabel: "Shop Now", textOverlay: "Fubu" },
-    { image: "/nike.png", buttonLabel: "Buy Now", textOverlay: "Nike" },
+    { image: "/fubu.jpg", buttonLabel: "Shop Now", textOverlay: "Fubu" },
+    { image: "/nike.jpg", buttonLabel: "Buy Now", textOverlay: "Nike" },
     {
-      image: "/adidas.png",
+      image: "/adidas.jpg",
       buttonLabel: "View Collection",
       textOverlay: "Adidas",
     },
