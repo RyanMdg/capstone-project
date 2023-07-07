@@ -46,7 +46,7 @@ const Navbar = () => {
         <li>Accessories</li>
       </ul>
 
-      <div className="flex items-center  gap-10">
+      <div className="flex screen4:ms-[8rem] screen3:ms-[17rem] items-center  gap-10">
         <div className="flex screen2:hidden screen3:hidden items-center relative">
           <input
             type="text"

@@ -15,7 +15,8 @@ module.exports = {
       screens: {
         screen1: { min: "800px" },
         screen2: { min: "320px", max: "500px" },
-        screen3: { min: "500px", max: "800px" }, // Define a custom breakpoint at 900px
+        screen3: { min: "500px", max: "800px" },
+        screen4: { min: "400px", max: "500px" }, // Define a custom breakpoint at 900px
       },
     },
   },

@@ -32,19 +32,21 @@ const Carousel = () => {
   };
 
   return (
-    <div className="h-screen relative screen2:w-[250%] group">
+    <div className="h-screen relative screen2:w-[250%] screen3:w-[200%]  group">
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].image})` }}
         className="w-full h-full bg-center bg-cover duration-500 relative"
       >
-        <div className="absolute inset-0 flex items-center ms-10">
+        <div className="absolute inset-0 flex items-center ms-[5rem]">
           <div className=" p-4 text-white text-center">
-            <h2 className="text-xl font-semibold text-black">
-              this one stop shop
+            <h2 className="text-[3rem] leading-[2.8rem] uppercase  font-bold text-white">
+              NEVER BEFORE. <br /> FOREVER AFTER.
             </h2>
-            <button className="mt-4 px-4 py-2 bg-white text-black rounded-md">
-              Shop Now
-            </button>
+            <div className="flex">
+              <button className="mt-4 px-6 text-[1rem] font-semibold hover:bg-white hover:text-black duration-500 hover:translate-y-[-.3rem] uppercase py-2 bg-black text-white">
+                Shop Now
+              </button>
+            </div>
           </div>
         </div>
       </div>
