@@ -37,16 +37,15 @@ const Carousel = () => {
         style={{ backgroundImage: `url(${slides[currentIndex].image})` }}
         className="w-full h-full bg-center bg-cover duration-500 relative"
       >
-        <div className="absolute inset-0 flex items-center ms-[5rem]">
+        <div className="absolute screen2:bottom-[7.5rem] screen3:bottom-[7.5rem] inset-0 flex items-end mt-[38rem] justify-center ms-[5rem]">
           <div className=" p-4 text-white text-center">
             <h2 className="text-[3rem] leading-[2.8rem] uppercase  font-bold text-white">
               NEVER BEFORE. <br /> FOREVER AFTER.
             </h2>
-            <div className="flex">
-              <button className="mt-4 px-6 text-[1rem] font-semibold hover:bg-white hover:text-black duration-500 hover:translate-y-[-.3rem] uppercase py-2 bg-black text-white">
-                Shop Now
-              </button>
-            </div>
+
+            <button className="mt-4 px-6 text-[1rem] font-semibold hover:bg-[#ffffff7a] hover:text-black duration-500 hover:translate-y-[-.3rem] uppercase py-2 bg-white screen2:text-[2rem] screen3:text-[2rem] text-black">
+              Shop Now
+            </button>
           </div>
         </div>
       </div>
