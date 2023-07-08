@@ -2,6 +2,7 @@ import { useState } from "react";
 import { AiOutlineSearch, AiOutlineHeart } from "react-icons/ai";
 import { VscAccount } from "react-icons/vsc";
 import { BsBag } from "react-icons/bs";
+import "../globals.css";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
