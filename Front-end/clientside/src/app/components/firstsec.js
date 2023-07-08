@@ -5,7 +5,7 @@ import "../globals.css";
 const firstsec = () => {
   return (
     <div className=" flex my-7 justify-center screen2:w-[250%] screen3:w-[200%]">
-      <div className=" mt-[5rem] grid md:grid-cols-3 text-center gap-[3rem]">
+      <div className=" mt-[5rem] screen2:my-[7rem] grid md:grid-cols-3 text-center screen2:gap-[6rem] gap-[3rem]">
         <div className=" flex gap-2 flex-col items-center screen2:text-[2.5rem] screen3:text-[2.5rem]">
           <LiaShippingFastSolid className="text-[3rem] text-[#322626c3] screen2:text-[6rem] " />
           <h1 className="text-[#0000006b]">FREE SHIP ALL ORDER</h1>
