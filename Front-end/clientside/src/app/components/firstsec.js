@@ -13,7 +13,7 @@ const firstsec = () => {
           </span>
         </div>
         <div className=" flex gap-2 flex-col items-center screen2:text-[2.5rem] screen3:text-[2.5rem]">
-          <GrCycle className="text-[2rem] text-[#322626c3]  screen2:text-[4rem] " />
+          <GrCycle className="text-[2rem] text-[#322626c3] screen2:text-[4rem] " />
           <h1 className="text-[#00000091]">FREE RETURNS</h1>
           <span className="text-[#000000a7]">30 days return on all items</span>
         </div>
