@@ -2,7 +2,7 @@ const thirdsec = () => {
   return (
     <div className=" max-w-[80rem] screen2:w-[250%] my-10 mx-auto grid screen2:gap-4 md:grid-cols-2">
       {/* FIRST IMAGE */}
-      <div className="relative mx-auto screen2:ms-[8rem] ms-[10rem] w-[70%] overflow-hidden">
+      <div className="relative screen2:w-[75%] mx-auto screen2:mx-auto ms-[10rem] w-[70%] overflow-hidden">
         <img
           src="/grid-1.jpg"
           className="hover:scale-110 inset-0 transition-transform hover:brightness-75 duration-500"
@@ -22,7 +22,7 @@ const thirdsec = () => {
 
       {/* SECOND IMAGE */}
       <div className="flex screen2:items-center flex-col gap-7">
-        <div className="relative w-[75%] overflow-hidden">
+        <div className="relative w-[75%]  overflow-hidden">
           <img
             src="/grid-2.jpg"
             className="hover:scale-110 inset-0 transition-transform hover:brightness-75 duration-500"
