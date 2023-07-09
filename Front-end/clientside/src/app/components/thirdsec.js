@@ -2,12 +2,22 @@ const thirdsec = () => {
   return (
     <div className=" max-w-[80rem] screen2:w-[250%] my-10 mx-auto grid screen2:gap-4 md:grid-cols-2">
       {/* FIRST IMAGE */}
-      <div className=" mx-auto screen2:ms-[8rem] ms-[10rem] w-[70%] overflow-hidden">
+      <div className="relative mx-auto screen2:ms-[8rem] ms-[10rem] w-[70%] overflow-hidden">
         <img
           src="/grid-1.jpg"
-          className=" hover:scale-110 hover:brightness-75 duration-500"
+          className="hover:scale-110 inset-0 transition-transform hover:brightness-75 duration-500"
           alt=""
         />
+
+        <span
+          className="absolute z-50 top-[8rem] left-[9rem] transform -translate-x-1/2 -translate-y-1/2 text-white uppercase screen2:text-[3rem] screen2:left-[11rem]
+           screen2:top-[10rem] font-extrabold p-2 screen2:leading-[3rem] leading-[2.5rem] text-[2.5rem]"
+        >
+          Cut With
+          <br />
+          <span className=" text-black"> Quickness</span>
+          <br />{" "}
+        </span>
       </div>
 
       {/* SECOND IMAGE */}
@@ -20,11 +30,11 @@ const thirdsec = () => {
           />
 
           <span
-            className="absolute z-50 top-[6.7rem] left-[6.5rem] transform -translate-x-1/2 -translate-y-1/2 text-white uppercase screen2:text-[2.3rem] screen2:left-[10rem]
-           screen2:top-[10rem] font-bold p-2 text-[1.5rem]"
+            className="absolute z-50 top-[6.7rem] left-[7rem] transform -translate-x-1/2 -translate-y-1/2 text-white uppercase screen2:text-[2.3rem] screen2:left-[11rem]
+           screen2:top-[10rem] font-extrabold p-2 text-[1.5rem]"
           >
             New arrivals <br /> up to 70% off <br />{" "}
-            <span className="cursor-pointer text-[1.5rem]">
+            <span className="cursor-pointer screen2:text-[1.5rem] text-[1rem]">
               shop now <span className=" text-[2rem] ms-2 ">&#8250;</span>{" "}
             </span>
           </span>
@@ -40,7 +50,7 @@ const thirdsec = () => {
 
           <span
             className="absolute z-50 top-[3rem] text-end left-[18rem] transform -translate-x-1/2 -translate-y-1/2 text-black uppercase screen2:text-[2.3rem] screen2:left-[30rem]
-           screen2:top-[7rem] font-bold w-[20rem] text-[1.5rem]"
+           screen2:top-[7rem] font-extrabold  w-[20rem] text-[1.5rem]"
           >
             super sale <br /> new era caps
           </span>
