@@ -4,6 +4,9 @@ import Hero from "../src/app/components/hero";
 import FirstSec from "../src/app/components/firstsec";
 import Secondsec from "@/app/components/secondsec";
 import Thirdsec from "../src/app/components/thirdsec";
+import Fourthsec from "../src/app/components/fourthsec";
+import Newsletter from "../src/app/components/newlettersection";
+
 const home = () => {
   return (
     <div>
@@ -12,6 +15,8 @@ const home = () => {
       <FirstSec />
       <Secondsec />
       <Thirdsec />
+      <Fourthsec />
+      <Newsletter />
     </div>
   );
 };
