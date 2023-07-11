@@ -17,7 +17,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex justify-between pb-5  screen2:mx-auto mx-10 mt-4">
+    <nav className="flex bg-white fixed z-50 w-[100%] px-4 pt-4 screen2:w-[100%] justify-between pb-5  screen2:mx-auto ">
       {/* Hamburger Icon */}
       <div className="lg:hidden flex items-center">
         <button

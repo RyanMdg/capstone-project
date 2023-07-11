@@ -22,12 +22,12 @@ const newsletter = () => {
           <div className=" flex gap-4 flex-col font-normal text-[.8rem]">
             <input
               placeholder="Email address"
-              className=" mt-10 w-[70%] screen2:w-[50%] px-2"
+              className=" outline-none text-black mt-10 w-[70%] screen2:w-[50%] px-2"
               type="email"
               name=""
               id=""
             />
-            <button className=" w-[30%] bg-[#1d1a1ac9] uppercase ">
+            <button className=" hover:bg-black w-[30%] bg-[#1d1a1ac9] uppercase ">
               subscribe
             </button>
           </div>

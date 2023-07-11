@@ -10,7 +10,7 @@ const thirdsec = () => {
         />
 
         <span
-          className="absolute z-50 top-[8rem] left-[9rem] transform -translate-x-1/2 -translate-y-1/2 text-white uppercase screen2:text-[3rem] screen2:left-[11rem]
+          className="absolute z-40 top-[8rem] left-[9rem] transform -translate-x-1/2 -translate-y-1/2 text-white uppercase screen2:text-[3rem] screen2:left-[11rem]
            screen2:top-[10rem] font-extrabold p-2 screen2:leading-[3rem] leading-[2.5rem] text-[2.5rem]"
         >
           Cut With
@@ -30,7 +30,7 @@ const thirdsec = () => {
           />
 
           <span
-            className="absolute z-50 top-[6.7rem] left-[7rem] transform -translate-x-1/2 -translate-y-1/2 text-white uppercase screen2:text-[2.3rem] screen2:left-[11rem]
+            className="absolute  z-40 top-[6.7rem] left-[7rem] transform -translate-x-1/2 -translate-y-1/2 text-white uppercase screen2:text-[2.3rem] screen2:left-[11rem]
            screen2:top-[10rem] font-extrabold p-2 text-[1.5rem]"
           >
             New arrivals <br /> up to 70% off <br />{" "}
@@ -49,7 +49,7 @@ const thirdsec = () => {
           />
 
           <span
-            className="absolute z-50 top-[3rem] text-end left-[18rem] transform -translate-x-1/2 -translate-y-1/2 text-black uppercase screen2:text-[2.3rem] screen2:left-[30rem]
+            className="absolute  z-40 top-[3rem] text-end left-[18rem] transform -translate-x-1/2 -translate-y-1/2 text-black uppercase screen2:text-[2.3rem] screen2:left-[30rem]
            screen2:top-[7rem] font-extrabold  w-[20rem] text-[1.5rem]"
           >
             super sale <br /> new era caps
