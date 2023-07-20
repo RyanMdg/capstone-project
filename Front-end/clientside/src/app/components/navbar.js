@@ -61,7 +61,9 @@ const Navbar = () => {
         </button>
         <VscAccount className="text-[1.3rem] screen3:text-[2rem] screen2:text-[3rem]" />
         <AiOutlineHeart className="text-[1.3rem] screen3:text-[2rem] screen2:text-[3rem]" />
-        <BsBag className="text-[1.3rem] screen3:me-5 screen3:text-[2rem] screen2:me-10 screen2:text-[3rem]" />
+        <a href="cart">
+          <BsBag className="text-[1.3rem] screen3:me-5 screen3:text-[2rem] screen2:me-10 screen2:text-[3rem]" />
+        </a>
       </div>
 
       {/* FOR MENU HAMBURGER */}
