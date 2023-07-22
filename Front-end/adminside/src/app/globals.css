@@ -16,6 +16,9 @@
   }
 }
 
-body {
-  background-color: #b434d154;
+.back {
+  background-image: url("../../public/fubu.jpg");
+  background-position: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../public/fubu.jpg");
 }

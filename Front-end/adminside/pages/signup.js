@@ -14,14 +14,11 @@ const SignupLogin = () => {
 
   const handleSignup = async () => {
     try {
-      const response = await axios.post(
-        "https://miniproject-2-qm9q.onrender.com/user/signup",
-        {
-          username,
-          password,
-          email,
-        }
-      );
+      const response = await axios.post("http://localhost:4000/user/signup", {
+        username,
+        password,
+        email,
+      });
       console.log(response.data);
       setShowModal(true);
       setEmail("");
@@ -33,36 +30,40 @@ const SignupLogin = () => {
   };
 
   return (
-    <div className="flex bg-zinc-500 flex-col justify-center items-center h-screen">
-      <title>TGH ADMIN | Sign up</title>
+    <div className="flex back bg-zinc-500 flex-col justify-center items-center h-screen">
+      <title>Brndemorium |Admin Sign up</title>
       <div>
-        <h1 className=" bg-black p-3 text-white m-5">The Grocery Hub Admin</h1>
+        <h1 className=" bg-black px-6 py-2 font-bold uppercase underline text-[2rem] text-white m-5">
+          brndEmporuim
+        </h1>
       </div>
-      <div className="bg-white p-8 rounded shadow">
-        <h2 className="text-2xl font-bold mb-4">Create Admin Account</h2>
+      <div className="bg-[#000000b5] p-8 rounded shadow">
+        <h2 className="text-2xl text-center font-bold mb-4 text-[#e9ebf0]">
+          Create Admin Account
+        </h2>
         <input
           type="text"
           placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="w-full border rounded p-2 mb-4"
+          className="w-full bg-black text-[#e9ebf0] border rounded p-2 mb-4"
         />
         <input
           type="text"
           placeholder="Username"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
-          className="w-full border rounded p-2 mb-4"
+          className="w-full bg-black text-[#e9ebf0] border rounded p-2 mb-4"
         />
         <input
           type="password"
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className="w-full border rounded p-2 mb-4"
+          className="w-full bg-black text-[#e9ebf0] border rounded p-2 mb-4"
         />
         {error && <p className="text-red-500 mb-4">{error}</p>}
-        <div className="flex items-center gap-4 flex-col">
+        <div className="flex items-center gap-4 flex-col text-[#e9ebf0]">
           <p>
             Already have an account?{" "}
             <a href="/" className=" underline">
@@ -72,7 +73,7 @@ const SignupLogin = () => {
 
           <button
             onClick={handleSignup}
-            className="bg-slate-600 hover:bg-slate-700 text-white font-bold py-2 px-7 rounded"
+            className="bg-[#862b28] hover:bg-[#862b28b6] duration-300 text-white font-bold py-2 px-7 rounded"
           >
             Signup
           </button>

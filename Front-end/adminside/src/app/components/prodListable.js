@@ -15,14 +15,11 @@ const Table = () => {
   const handleDelete = async (id) => {
     try {
       const token = localStorage.getItem("token");
-      await axios.delete(
-        `https://miniproject-2-qm9q.onrender.com/products/productlist/${id}`,
-        {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        }
-      );
+      await axios.delete(`http://localhost:4000/products/productlist/${id}`, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
 
       setproductsList((prevProductsList) =>
         prevProductsList.filter((product) => product._id !== id)
@@ -44,7 +41,7 @@ const Table = () => {
         }
 
         const response = await axios.get(
-          "https://miniproject-2-qm9q.onrender.com/products/productlist",
+          "http://localhost:4000/products/productlist",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -87,6 +84,9 @@ const Table = () => {
               <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold uppercase tracking-wider">
                 Stock
               </th>
+              <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold uppercase tracking-wider">
+                Brand
+              </th>
               <th className="px-5 py-3 text-center border-b-2 border-gray-200 bg-gray-100  text-xs font-semibold uppercase tracking-wider">
                 Image
               </th>
@@ -108,11 +108,14 @@ const Table = () => {
                   <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                     {item.stock}
                   </td>
+                  <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                    {item.brand}
+                  </td>
                   <td className="px-5 py-5  border-b border-gray-200 bg-white text-sm">
                     <div className=" flex justify-center">
                       <img
                         className=" w-36"
-                        src={`https://miniproject-2-qm9q.onrender.com/${item.image}`}
+                        src={`http://localhost:4000/${item.image}`}
                         alt=""
                       />
                     </div>

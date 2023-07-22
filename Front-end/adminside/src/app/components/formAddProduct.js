@@ -7,6 +7,7 @@ const ProductForm = () => {
     price: 0,
     stock: 0,
     description: "",
+    brand: "",
   });
 
   const [image, setImage] = useState(null);
@@ -31,10 +32,11 @@ const ProductForm = () => {
       formDataWithImage.append("price", formData.price);
       formDataWithImage.append("stock", formData.stock);
       formDataWithImage.append("description", formData.description);
+      formDataWithImage.append("brand", formData.brand);
       formDataWithImage.append("image", image);
 
       const response = await axios.post(
-        "https://miniproject-2-qm9q.onrender.com/products/productadd",
+        "http://localhost:4000/products/productadd",
         formDataWithImage,
         {
           headers: {
@@ -45,7 +47,13 @@ const ProductForm = () => {
 
       console.log("Response:", response.data);
       setShowModal(true);
-      setFormData({ productName: "", price: 0, stock: 0, description: "" });
+      setFormData({
+        productName: "",
+        price: 0,
+        stock: 0,
+        description: "",
+        brand: "",
+      });
       setImage(null);
     } catch (error) {
       console.error("Error:", error);
@@ -71,6 +79,23 @@ const ProductForm = () => {
             type="text"
             placeholder="Enter product name"
             value={formData.productName}
+            onChange={handleChange}
+          />
+        </div>
+
+        <div className="mb-4">
+          <label
+            className="block text-gray-700 text-sm font-bold mb-2"
+            htmlFor="brand"
+          >
+            Product Brand
+          </label>
+          <input
+            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            name="brand"
+            type="text"
+            placeholder="Enter product name"
+            value={formData.brand}
             onChange={handleChange}
           />
         </div>

@@ -56,7 +56,9 @@ const Hamburger = ({ id }) => {
       >
         {" "}
         <div className="flex items-center justify-between px-4 py-3 bg-gray-800">
-          <div className="text-white text-xl font-bold">ShopWithin</div>
+          <div className="text-white text-xl font-bold uppercase">
+            brnd emporium
+          </div>
           <button
             onClick={toggleSidebar}
             className="p-2 rounded-md text-gray-400 focus:outline-none"
@@ -140,7 +142,7 @@ const Hamburger = ({ id }) => {
 
                   <li>
                     <Link
-                      href="/productadd"
+                      href="/productadding"
                       className="flex items-center py-2 text-white"
                     >
                       <svg

@@ -1,13 +1,12 @@
-import Navbar from "../../../../Mp-2/Front-End/seller/src/app/components/navbar";
-import ProductList from "@/app/components/prodList";
-import "../src/app/globals.css";
+import Navbar from "../src/app/components/navbar";
+import Productlist from "../src/app/components/prodList";
 
 const productlist = () => {
   return (
-    <div>
+    <>
       <Navbar />
-      <ProductList />
-    </div>
+      <Productlist />
+    </>
   );
 };
 
