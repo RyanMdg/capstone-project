@@ -18,10 +18,10 @@ const product = () => {
             <a className=" hover:underline" href="/adidas">
               <li>Adidas</li>
             </a>
-            <a className=" hover:underline" href="">
+            <a className=" hover:underline" href="/fubu">
               <li>Fubu</li>
             </a>
-            <a className=" hover:underline" href="">
+            <a className=" hover:underline" href="/newera">
               <li>New Era</li>
             </a>
           </ul>
