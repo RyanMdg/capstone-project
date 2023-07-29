@@ -38,7 +38,7 @@ const secondsec = () => {
               >
                 <img
                   className="w-fit overflow-hidden mb-3"
-                  src={`http://localhost:4000/${product.image}`}
+                  src={`https://brndemporuimbackend.onrender.com/${product.image}`}
                   alt=""
                 />
 
