@@ -14,9 +14,12 @@ const Table = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:4000/products/cartlist/${id}`, {
-        headers: {},
-      });
+      await axios.delete(
+        `https://brndemporuimbackend.onrender.com/products/cartlist/${id}`,
+        {
+          headers: {},
+        }
+      );
 
       setproductsList((prevProductsList) =>
         prevProductsList.filter((product) => product._id !== id)
@@ -58,7 +61,7 @@ const Table = () => {
     const fetchProductlist = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:4000/products/cartlist"
+          "https://brndemporuimbackend.onrender.com/products/cartlist"
         );
 
         const productsWithQuantity = response.data.map((product) => ({
@@ -111,7 +114,7 @@ const Table = () => {
                 <div className="flex gap-4 hover:shadow-xl duration-300 relative border w-[95%]  border-black">
                   <img
                     className="w-[30%]"
-                    src={`http://localhost:4000/${item.image}`}
+                    src={`https://brndemporuimbackend.onrender.com/${item.image}`}
                     alt=""
                   />
                   <div className="flex flex-col w-screen">

@@ -8,7 +8,9 @@ const ProductListByBrand = ({ brand }) => {
   useEffect(() => {
     const fetchProductList = async () => {
       try {
-        const response = await axios.get(`http://localhost:4000/react`);
+        const response = await axios.get(
+          `https://brndemporuimbackend.onrender.com/react`
+        );
         // You may want to randomize or sort the list on the server-side before sending the response.
         // For simplicity, let's assume the server already returns the list in the desired order.
 

@@ -17,7 +17,7 @@ const Home = () => {
     const fetchProductlist = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:4000/products/cartlist"
+          "https://brndemporuimbackend.onrender.com/products/cartlist"
         );
 
         setproductsList(response.data.products);

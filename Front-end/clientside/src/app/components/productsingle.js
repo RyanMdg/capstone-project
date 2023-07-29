@@ -23,7 +23,7 @@ const SingleProduct = ({ onAddToCart }) => {
     const fetchProduct = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:4000/react/single/${productId}`
+          `https://brndemporuimbackend.onrender.com/react/single/${productId}`
         );
         setProduct(response.data);
       } catch (error) {
