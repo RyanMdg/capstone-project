@@ -7,7 +7,9 @@ const secondsec = () => {
   useEffect(() => {
     const fetchProductList = async () => {
       try {
-        const response = await axios.get("http://localhost:4000/react");
+        const response = await axios.get(
+          "https://brndemporuimbackend.onrender.com/react"
+        );
 
         // Randomize the order of the products
         const randomizedList = response.data.sort(() => 0.5 - Math.random());
