@@ -48,14 +48,17 @@ const SingleProduct = ({ onAddToCart }) => {
 
   const handleAddToCart = async () => {
     try {
-      const response = await axios.post("http://localhost:4000/products/cart", {
-        productId: product._id,
-        productName: product.productName,
-        brand: product.brand,
-        price: product.price,
-        image: product.image, // Include the image URL in the request
-        quantity,
-      });
+      const response = await axios.post(
+        "https://brndemporuimbackend.onrender.com/products/cart",
+        {
+          productId: product._id,
+          productName: product.productName,
+          brand: product.brand,
+          price: product.price,
+          image: product.image, // Include the image URL in the request
+          quantity,
+        }
+      );
 
       if (response.status === 201) {
         toast.success("Product added to the bag!");
@@ -82,7 +85,7 @@ const SingleProduct = ({ onAddToCart }) => {
           <div className="ms-28 overflow-hidden  flex justify-center ">
             <img
               className=" flex items-center w-fit "
-              src={`http://localhost:4000/${product.image}`}
+              src={`https://brndemporuimbackend.onrender.com/${product.image}`}
               alt=""
             />
           </div>
@@ -161,7 +164,7 @@ const SingleProduct = ({ onAddToCart }) => {
           <div className=" flex items-center gap-4 ">
             <img
               className=" flex items-center w-[30%] "
-              src={`http://localhost:4000/${product.image}`}
+              src={`https://brndemporuimbackend.onrender.com/${product.image}`}
               alt=""
             />
             <p className=" uppercase font-medium">{product.productName}</p>
