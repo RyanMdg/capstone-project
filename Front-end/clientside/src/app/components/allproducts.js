@@ -1,37 +1,34 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Link from "next/link";
-const secondsec = () => {
+
+const ProductListByBrand = ({ brand }) => {
   const [productsList, setProductsList] = useState(null);
 
   useEffect(() => {
     const fetchProductList = async () => {
       try {
-        const response = await axios.get("http://localhost:4000/react");
+        const response = await axios.get(`http://localhost:4000/react`);
+        // You may want to randomize or sort the list on the server-side before sending the response.
+        // For simplicity, let's assume the server already returns the list in the desired order.
 
-        // Randomize the order of the products
-        const randomizedList = response.data.sort(() => 0.5 - Math.random());
-
-        setProductsList(randomizedList);
+        setProductsList(response.data);
       } catch (error) {
         console.error("Error:", error);
       }
     };
 
     fetchProductList();
-  }, []);
-
-  const limitedProducts = productsList && productsList.slice(0, 4);
+  }, [brand]);
 
   return (
     <div className="flex flex-col items-center justify-center screen2:w-[250%]">
       <div className="grid  md:grid-cols-4 w-[90%] mt-5">
-        {limitedProducts &&
-          limitedProducts.map((product) => (
-            <div className="flex justify-center">
+        {productsList &&
+          productsList.map((product) => (
+            <div className="flex mb-10 justify-center" key={product._id}>
               <Link
                 href={`/product/${product._id}`}
-                key={product.id}
                 className=" w-[75%]    duration-300 border hover:shadow-lg border-[#92929238]  hover:translate-y-[-.5rem] hover:border hover:border-black"
               >
                 <img
@@ -59,4 +56,4 @@ const secondsec = () => {
   );
 };
 
-export default secondsec;
+export default ProductListByBrand;

@@ -1,4 +1,4 @@
-import Cartpage from "../src/app/components/cartpage";
+import Cartpage from "../../src/app/components/cartpage";
 import Navbar from "@/app/components/navbar";
 
 const cartpage = () => {

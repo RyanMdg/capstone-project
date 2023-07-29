@@ -109,7 +109,7 @@ const ProductForm = () => {
           <input
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             id="price"
-            type="number"
+            type="text"
             name="price"
             placeholder="Enter price"
             value={formData.price}

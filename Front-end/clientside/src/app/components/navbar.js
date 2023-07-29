@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { AiOutlineSearch, AiOutlineHeart } from "react-icons/ai";
 import { VscAccount } from "react-icons/vsc";
 import { BsBag } from "react-icons/bs";
+import axios from "axios";
 import "../globals.css";
 
 const Navbar = () => {
@@ -41,10 +42,11 @@ const Navbar = () => {
         <a href="/">
           <li>Home</li>
         </a>
-        <li className="font-semibold">Men</li>
-        <li className="font-semibold">Women</li>
-        <li>Products</li>
-        <li>Accessories</li>
+        <a href="/products">
+          <li>Products</li>
+        </a>
+        <li>About</li>
+        <li>Contact</li>
       </ul>
 
       <div className="flex screen4:ms-[8rem] screen3:ms-[17rem] items-center  gap-10">

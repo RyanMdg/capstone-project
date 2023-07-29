@@ -36,6 +36,21 @@ const singleReact = (req, res) => {
     .catch((err) => res.status(404).json({ error: "Product doesn't exist" }));
 };
 
+const productBrand = (req, res) => {
+  const brand = req.params.brand;
+
+  // Fetch products that match the given brand using the Mongoose model
+  prodSchema
+    .find({ brand: brand })
+    .then((result) => {
+      if (result.length === 0) {
+        return res.status(404).json({ error: "Product doesn't exist" });
+      }
+      res.status(200).json(result);
+    })
+    .catch((err) => res.status(500).json({ error: "Internal Server Error" }));
+};
+
 // * GET SINGLE PRODUCT
 const productsSingle = (req, res) => {
   const id = req.params.id;
@@ -107,4 +122,5 @@ export default {
   productsAdded,
   postReact,
   singleReact,
+  productBrand,
 };

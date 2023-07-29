@@ -44,7 +44,7 @@ const Hamburger = ({ id }) => {
   }, [id]);
 
   return (
-    <div className="flex bg-white drop-shadow-lg h-16">
+    <div className="flex bg-[#1b1a1a] drop-shadow-xl h-16">
       <div
         className={` ${isOpen ? "bg-opacity-50" : "hidden"} `}
         onClick={toggleSidebar}
@@ -55,13 +55,13 @@ const Hamburger = ({ id }) => {
         }`}
       >
         {" "}
-        <div className="flex items-center justify-between px-4 py-3 bg-gray-800">
+        <div className="flex items-center justify-between px-4 py-3 bg-[#393232]">
           <div className="text-white text-xl font-bold uppercase">
             brnd emporium
           </div>
           <button
             onClick={toggleSidebar}
-            className="p-2 rounded-md text-gray-400 focus:outline-none"
+            className="p-2 rounded-md text-white focus:outline-none"
           >
             <svg
               className="h-6 w-6"
@@ -78,7 +78,7 @@ const Hamburger = ({ id }) => {
             </svg>
           </button>
         </div>
-        <div className="py-4 px-6 bg-slate-700 h-screen">
+        <div className="py-4 px-6 bg-[#1c1c1c] h-screen">
           <ul className="space-y-2">
             <li>
               <Link href="/home" className="flex items-center py-2 text-white">
@@ -245,7 +245,7 @@ const Hamburger = ({ id }) => {
       <div className="flex justify-between w-screen">
         <button
           onClick={toggleSidebar}
-          className={` top-4 right-4 p-2 rounded-md text-gray-400 focus:outline-none z-50 ${
+          className={` top-4 right-4 p-2 rounded-md text-white focus:outline-none z-50 ${
             isOpen ? "hidden" : "block"
           }`}
         >

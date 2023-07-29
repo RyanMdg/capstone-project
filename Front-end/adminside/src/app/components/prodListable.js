@@ -60,7 +60,7 @@ const Table = () => {
   }, []);
 
   return (
-    <div className="bg-white shadow-md rounded my-6">
+    <div className="bg-white shadow-md rounded my-6 ">
       <title>Product Lists</title>
       {isLoading ? (
         <div
