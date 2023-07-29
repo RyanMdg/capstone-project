@@ -11,7 +11,7 @@ const ProductListByBrand = ({ brand }) => {
     const fetchProductList = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:4000/react/productlist/${brand}`
+          `https://brndemporuimbackend.onrender.com/react/productlist/${brand}`
         );
 
         // Randomize the order of the products (optional)
